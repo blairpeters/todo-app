@@ -1,21 +1,12 @@
 import React from "react";
 import PageTitle from "./components/PageTitle";
+import AddToDoForm from "./components/AddToDoForm";
 
 const App = () => {
   return (
     <main>
       <PageTitle text={"My Todo App"} />
-      <form>
-        <input
-          placeholder="Type new Todo here"
-          class="input"
-          name="text"
-          type="text"
-          required
-        />
-
-        <button class="button">Add Todo</button>
-      </form>
+      <AddToDoForm />
       <div className="todos-container"></div>
     </main>
   );
