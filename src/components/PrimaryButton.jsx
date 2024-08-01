@@ -1,5 +1,5 @@
-const PrimaryButton = () => {
-  return <button class="button">Add Todo</button>;
+const PrimaryButton = ({ children }) => {
+  return <button class="button">{children}</button>;
 };
 
 export default PrimaryButton;
